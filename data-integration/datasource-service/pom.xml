@@ -2,8 +2,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>de.jeha.demo</groupId>
-    <artifactId>kafka-demo-datasource-service</artifactId>
+    <parent>
+        <groupId>de.jeha.demo</groupId>
+        <artifactId>kafka-demo-di</artifactId>
+        <version>0.1-SNAPSHOT</version>
+    </parent>
+    <artifactId>kafka-demo-di-datasource-service</artifactId>
     <name>${project.artifactId}</name>
     <packaging>jar</packaging>
     <version>0.1-SNAPSHOT</version>
