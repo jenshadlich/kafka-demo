@@ -1,6 +1,10 @@
 # kafka-0.8.2.2
 
-Quickstart examples:
+* OpenJDK 7
+* Kafka 0.8.2.2, port 9092
+* Zookeeper (from kafka-0.8.2.2 distribution), port 2181
+
+## Some examples:
 
 Create `test` topic.
 ```
