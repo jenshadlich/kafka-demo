@@ -1,4 +1,6 @@
 /data-integration/datasource-service/kafka-demo-di-datasource-service.iml
+/kafka/kafka.iml
+/kafka/kafka-0.8.2.2/.vagrant
 /data-integration/reporting-kafka-adapter/kafka-demo-di-reporting-kafka-adapter.iml
 /data-integration/kafka-demo-di.iml
 /data-integration/datasource-service/target
