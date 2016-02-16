@@ -1,7 +1,7 @@
-package de.jeha.demo.springboot.resources;
+package de.jeha.demo.kafka.di.reporting.kafka.adapter.resources;
 
-import de.jeha.demo.springboot.api.DemoEvent;
-import de.jeha.demo.springboot.api.DemoEventsResponse;
+import de.jeha.demo.kafka.di.datasource.service.api.DemoEventsResponse;
+import de.jeha.demo.kafka.di.datasource.service.api.DemoEvent;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 

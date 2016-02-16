@@ -18,6 +18,7 @@
 
     <modules>
         <module>datasource-service</module>
+        <module>reporting-kafka-adapter</module>
     </modules>
 
 </project>

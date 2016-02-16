@@ -1,4 +1,4 @@
-package de.jeha.demo.springboot.api;
+package de.jeha.demo.kafka.di.datasource.service.api;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;

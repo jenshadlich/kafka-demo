@@ -1,4 +1,4 @@
-package de.jeha.demo.springboot;
+package de.jeha.demo.kafka.di.reporting.kafka.adapter;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

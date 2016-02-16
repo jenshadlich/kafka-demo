@@ -1,4 +1,4 @@
-package de.jeha.demo.springboot.resources;
+package de.jeha.demo.kafka.di.reporting.kafka.adapter.resources;
 
 import com.google.common.base.Charsets;
 import com.google.common.io.Resources;

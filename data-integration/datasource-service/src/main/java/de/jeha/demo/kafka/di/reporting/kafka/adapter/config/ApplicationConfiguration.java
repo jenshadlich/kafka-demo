@@ -1,4 +1,4 @@
-package de.jeha.demo.springboot.config;
+package de.jeha.demo.kafka.di.reporting.kafka.adapter.config;
 
 import org.springframework.context.annotation.Configuration;
 
