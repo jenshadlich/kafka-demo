@@ -4,6 +4,12 @@
 * Kafka 0.8.2.2, port 9092
 * Zookeeper (from kafka-0.8.2.2 distribution), port 2181
 
+Home directory for Kafka + Zookeeper: /usr/local/kafka/ 
+
+## Logs:
+
+See `/usr/local/kafka/logs/`.
+
 ## Some examples:
 
 Create `test` topic.
