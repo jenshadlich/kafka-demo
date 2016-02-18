@@ -2,8 +2,8 @@ package de.jeha.demo.kafka.di.reporting.kafka.adapter.resources;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.integration.kafka.support.KafkaHeaders;
 import org.springframework.integration.support.MessageBuilder;
-import org.springframework.messaging.Message;
 import org.springframework.messaging.MessageChannel;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -22,10 +22,10 @@ public class SendTestMessageResource {
 
     @RequestMapping(value = "/sendTestMessage", produces = "application/json")
     public String sendTestMessage() throws IOException {
-        final Message message =
-                MessageBuilder.withPayload("This is a test").setHeader("topic", "test").build();
 
-        channel.send(message);
+        channel.send(MessageBuilder.withPayload("This is a test")
+                .setHeader(KafkaHeaders.TOPIC, "test")
+                .build());
 
         return "{ status: \"success\" }";
     }
