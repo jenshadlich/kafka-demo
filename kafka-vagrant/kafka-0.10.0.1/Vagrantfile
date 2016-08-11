@@ -1,0 +1,25 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+VAGRANTFILE_API_VERSION = "2"
+
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+
+    config.vm.hostname = "kafka01001"
+
+    config.vm.box = "ubuntu/trusty64"
+
+    config.vm.network :forwarded_port, guest: 2181, host: 2181, auto_correct: true # zookeeper
+    config.vm.network :forwarded_port, guest: 9092, host: 9092, auto_correct: true # kafka
+
+    config.vm.network :private_network, ip: "192.168.42.11"
+
+    config.vm.provider 'virtualbox' do |v|
+        v.customize ['modifyvm', :id, '--name', 'trusty64-kafka01001']
+        v.customize ['modifyvm', :id, '--cpus', '2']
+        v.customize ['modifyvm', :id, '--memory', 2048]
+    end
+
+    config.vm.provision 'shell', path: 'provision.sh'
+
+end
