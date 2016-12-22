@@ -2,6 +2,7 @@
 /data-integration/datasource-service/kafka-demo-di-datasource-service.iml
 /data-integration/reporting-kafka-adapter/kafka-demo-di-reporting-kafka-adapter.iml
 /kafka-vagrant/kafka-vagrant.iml
+/kafka-vagrant/kafka-0.10.1.1/.vagrant/
 /kafka-vagrant/kafka-0.10.1.0/.vagrant/
 /kafka-vagrant/kafka-0.10.0.1/.vagrant
 /kafka-vagrant/kafka-0.10.0.0/.vagrant
@@ -14,3 +15,4 @@
 /kafka-demo.ipr
 /kafka-demo.iws
 /atlassian-ide-plugin.xml
+
